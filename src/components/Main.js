@@ -11,7 +11,8 @@ const Main = (props) => {
           inputValue="Overview"
           groupName="contentType"
           defaultChecked
-          labelClasses="content-type"
+          // labelClasses={`content-type ${checked ? "active-content" : ""}`}
+          labelClasses={`content-type active-content`}
         />
         <RadioButton
           inputValue="Structure"
@@ -28,23 +29,26 @@ const Main = (props) => {
         <img
           src={props.appData[props.planetIndex].images[props.imageSource]}
           alt={`${props.imageSource} ${props.appData[props.planetIndex].name}`}
+          class="main-image"
         />
       </div>
-      <h1 className="page-title">{props.appData[props.planetIndex].name}</h1>
-      <p class="content">
-        {props.appData[props.planetIndex][props.contentType].content}
-      </p>
-      <span className="source">
-        Source:{" "}
-        <a
-          href={props.appData[props.planetIndex][props.contentType].source}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Wikipedia
-        </a>{" "}
-        <img src="./assets/icon-source.svg" alt="" />
-      </span>
+      <section className="text-content">
+        <h1 className="page-title">{props.appData[props.planetIndex].name}</h1>
+        <p class="content">
+          {props.appData[props.planetIndex][props.contentType].content}
+        </p>
+        <span className="source">
+          Source :{" "}
+          <a
+            href={props.appData[props.planetIndex][props.contentType].source}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Wikipedia
+          </a>{" "}
+          <img src="./assets/icon-source.svg" alt="" />
+        </span>
+      </section>
       <div className="stats">
         <div className="stats-wrapper">
           <span className="stats-description">Rotation Time</span>

@@ -8,10 +8,12 @@ const App = () => {
   const [planetIndex, setPlanetIndex] = useState(2);
   const [imageSource, setImageSource] = useState("planet");
   const [contentType, setContentType] = useState("overview");
+  const [theme, setTheme] = useState("earth");
 
   const handlePlanetChange = (e) => {
     const index = data.findIndex((item) => item.name === e.target.id);
     setPlanetIndex(index);
+    setTheme(e.target.value);
   };
 
   const handleContentTypeChange = (e) => {
@@ -27,7 +29,7 @@ const App = () => {
     }
   };
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <Header appData={data} handlePlanetChange={handlePlanetChange} />
       <Main
         appData={data}
