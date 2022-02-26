@@ -2,7 +2,7 @@ import RadioButton from "./RadioButton";
 
 const Main = (props) => {
   return (
-    <main class="main">
+    <main className="main">
       <form
         onChange={props.handleContentTypeChange}
         className="content-type-wrapper"
@@ -18,14 +18,14 @@ const Main = (props) => {
         <RadioButton
           inputValue="Structure"
           labelValue={
-            window.innerWidth >= 670 ? "Internal Structure" : "Structure"
+            window.innerWidth >= 710 ? "Internal Structure" : "Structure"
           }
           groupName="contentType"
           labelClasses="content-type"
         />
         <RadioButton
           inputValue="Surface"
-          labelValue={window.innerWidth >= 670 ? "Surface Geology" : "Surface"}
+          labelValue={window.innerWidth >= 710 ? "Surface Geology" : "Surface"}
           groupName="contentType"
           labelClasses="content-type"
         />
@@ -34,12 +34,12 @@ const Main = (props) => {
         <img
           src={props.appData[props.planetIndex].images[props.imageSource]}
           alt={`${props.imageSource} ${props.appData[props.planetIndex].name}`}
-          class="main-image"
+          className="main-image"
         />
       </div>
       <section className="text-content">
         <h1 className="page-title">{props.appData[props.planetIndex].name}</h1>
-        <p class="content">
+        <p className="content">
           {props.appData[props.planetIndex][props.contentType].content}
         </p>
         <span className="source">

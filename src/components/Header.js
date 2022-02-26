@@ -26,7 +26,7 @@ const Header = (props) => {
   };
   return (
     <header className="header">
-      <span class="logo">The Planets</span>
+      <span className="logo">The Planets</span>
       <button className="navigation-button" onClick={handleToggle}>
         <img src="assets/icon-hamburger.svg" alt="" />
       </button>
