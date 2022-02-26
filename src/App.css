@@ -101,6 +101,9 @@ html {
 
 body {
   background-color: var(--navy-blue);
+  background-image: url("../public/assets/background-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--white);
   font-family: var(--font-primary);
   font-weight: 400;
