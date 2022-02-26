@@ -17,7 +17,7 @@ const Header = (props) => {
   };
   return (
     <header>
-      <h1>The Planets</h1>
+      <span class="logo">The Planets</span>
       <nav>
         <form onChange={props.handlePlanetChange}>
           {props.appData.map(displayPlanetNames)}

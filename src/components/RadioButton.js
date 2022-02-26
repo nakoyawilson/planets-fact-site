@@ -7,8 +7,11 @@ const RadioButton = (props) => {
         name={props.groupName}
         value={props.inputValue.toLowerCase()}
         defaultChecked={props.defaultChecked}
+        className="visually-hidden"
       />
-      <label htmlFor={props.inputValue}>{props.inputValue}</label>
+      <label htmlFor={props.inputValue} className={props.labelClasses}>
+        {props.inputValue}
+      </label>
     </div>
   );
 };
