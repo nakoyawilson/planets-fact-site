@@ -9,6 +9,7 @@ const Main = (props) => {
       >
         <RadioButton
           inputValue="Overview"
+          labelValue="Overview"
           groupName="contentType"
           defaultChecked
           // labelClasses={`content-type ${checked ? "active-content" : ""}`}
@@ -16,11 +17,15 @@ const Main = (props) => {
         />
         <RadioButton
           inputValue="Structure"
+          labelValue={
+            window.innerWidth >= 670 ? "Internal Structure" : "Structure"
+          }
           groupName="contentType"
           labelClasses="content-type"
         />
         <RadioButton
           inputValue="Surface"
+          labelValue={window.innerWidth >= 670 ? "Surface Geology" : "Surface"}
           groupName="contentType"
           labelClasses="content-type"
         />

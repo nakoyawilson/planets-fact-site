@@ -17,6 +17,7 @@ const Header = (props) => {
       <RadioButton
         key={item.id}
         inputValue={item.name}
+        labelValue={item.name}
         groupName="planets"
         defaultChecked={checked}
         labelClasses="nav-link"

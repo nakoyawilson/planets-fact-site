@@ -10,7 +10,7 @@ const RadioButton = (props) => {
         className="visually-hidden"
       />
       <label htmlFor={props.inputValue} className={props.labelClasses}>
-        {props.inputValue}
+        {props.labelValue}
       </label>
     </div>
   );
