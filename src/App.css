@@ -316,7 +316,6 @@ div:nth-child(8) .nav-link::before {
 .source a {
   color: var(--white);
   font-weight: 700;
-  opacity: 0.5;
 }
 
 .stats {
