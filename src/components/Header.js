@@ -1,4 +1,3 @@
-import { useState } from "react";
 import RadioButton from "./RadioButton";
 
 const Header = (props) => {
