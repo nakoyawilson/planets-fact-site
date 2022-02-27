@@ -380,6 +380,7 @@ div:nth-child(8) .nav-link::before {
   }
 
   .navigation {
+    background-color: transparent;
     position: static;
     padding: 0;
     transform: translateX(0);
@@ -532,6 +533,11 @@ div:nth-child(8) .nav-link::before {
     gap: 0;
   }
 
+  .nav-link {
+    position: relative;
+    top: 0.5rem;
+  }
+
   .nav-link:hover {
     cursor: pointer;
   }
@@ -541,9 +547,40 @@ div:nth-child(8) .nav-link::before {
     height: 0.4rem;
     width: 100%;
     background-image: none;
-    background-color: var(--theme-color);
     position: absolute;
-    top: -2.9rem;
+    top: -3.4rem;
+  }
+
+  div:nth-child(1) .nav-link:hover::after {
+    background-color: var(--mercury);
+  }
+
+  div:nth-child(2) .nav-link:hover::after {
+    background-color: var(--venus);
+  }
+
+  div:nth-child(3) .nav-link:hover::after {
+    background-color: var(--earth);
+  }
+
+  div:nth-child(4) .nav-link:hover::after {
+    background-color: var(--mars);
+  }
+
+  div:nth-child(5) .nav-link:hover::after {
+    background-color: var(--jupiter);
+  }
+
+  div:nth-child(6) .nav-link:hover::after {
+    background-color: var(--saturn);
+  }
+
+  div:nth-child(7) .nav-link:hover::after {
+    background-color: var(--uranus);
+  }
+
+  div:nth-child(8) .nav-link:hover::after {
+    background-color: var(--neptune);
   }
 
   /* Main */
