@@ -540,6 +540,7 @@ div:nth-child(8) .nav-link::before {
     content: "";
     height: 0.4rem;
     width: 100%;
+    background-image: none;
     background-color: var(--theme-color);
     position: absolute;
     top: -2.9rem;
