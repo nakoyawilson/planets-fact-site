@@ -270,8 +270,9 @@ div:nth-child(8) .nav-link::before {
 
 .geology-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 6.25rem;
+  top: 18rem;
+  left: 15.5rem;
 }
 
 .content-type-wrapper {
@@ -462,6 +463,12 @@ div:nth-child(8) .nav-link::before {
 
   .main-image {
     width: var(--image-width-tablet);
+  }
+
+  .geology-image {
+    width: 10.3rem;
+    top: 30rem;
+    left: 29.2rem;
   }
 
   .page-title {
