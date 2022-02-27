@@ -25,7 +25,7 @@ const App = () => {
   const handleContentTypeChange = (e) => {
     if (e.target.value === "surface") {
       setContentType("geology");
-      setImageSource("geology");
+      setImageSource("planet");
     } else if (e.target.value === "structure") {
       setContentType(e.target.value);
       setImageSource("internal");

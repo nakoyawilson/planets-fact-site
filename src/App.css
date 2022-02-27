@@ -261,10 +261,17 @@ div:nth-child(8) .nav-link::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .main-image {
   width: min(95%, var(--image-width-mobile));
+}
+
+.geology-image {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .content-type-wrapper {
@@ -289,7 +296,7 @@ div:nth-child(8) .nav-link::before {
   content: "";
   height: 0.4rem;
   width: 100%;
-  background-color: var(--theme-color);
+  border-bottom: 0.4rem solid var(--theme-color);
   position: absolute;
   bottom: -2.3rem;
   left: 0;
@@ -380,6 +387,12 @@ div:nth-child(8) .nav-link::before {
     padding: 3.2rem 5.2rem 2.7rem 5.1rem;
     gap: 3.9rem;
   }
+
+  .header.open {
+    position: static;
+    background-color: transparent;
+  }
+
   .navigation-button {
     display: none;
   }
@@ -609,6 +622,12 @@ div:nth-child(8) .nav-link::before {
 
   .main-image {
     width: min(95%, var(--image-width-desktop));
+  }
+
+  .geology-image {
+    width: 16.3rem;
+    top: 46.8rem;
+    left: 39.9rem;
   }
 
   .text-content {

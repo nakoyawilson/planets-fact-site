@@ -41,6 +41,13 @@ const Main = (props) => {
           alt={`${props.imageSource} ${props.appData[props.planetIndex].name}`}
           className="main-image"
         />
+        {props.contentType === "geology" && (
+          <img
+            src={props.appData[props.planetIndex].images.geology}
+            alt=""
+            className="geology-image"
+          />
+        )}
       </div>
       <section className="text-content">
         <h1 className="page-title">{props.appData[props.planetIndex].name}</h1>
