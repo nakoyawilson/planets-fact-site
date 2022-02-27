@@ -19,7 +19,7 @@ const Header = (props) => {
     );
   };
   return (
-    <header className="header">
+    <header className={`header ${props.navOpen ? "open" : ""}`}>
       <span className="logo">The Planets</span>
       <button className="navigation-button" onClick={props.handleToggle}>
         <img src="assets/icon-hamburger.svg" alt="" />

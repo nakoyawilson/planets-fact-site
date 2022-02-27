@@ -132,9 +132,14 @@ img {
   align-items: center;
   padding: 1.6rem 2.4rem;
   border-bottom: 1px solid var(--transparent-white2);
-  /* position: fixed;
+}
+
+.header.open {
+  position: fixed;
   background-color: var(--navy-blue);
-  top: 0; */
+  top: 0;
+  width: 100vw;
+  z-index: 100;
 }
 
 .logo {
