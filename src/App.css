@@ -533,6 +533,19 @@ div:nth-child(8) .nav-link::before {
     gap: 0;
   }
 
+  .nav-link:hover {
+    cursor: pointer;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    height: 0.4rem;
+    width: 100%;
+    background-color: var(--theme-color);
+    position: absolute;
+    top: -2.9rem;
+  }
+
   /* Main */
   .main {
     width: min(100%, 1440px);
@@ -591,6 +604,12 @@ div:nth-child(8) .nav-link::before {
     opacity: 1;
     width: 35rem;
     padding: 1.2rem 0 1.1rem 7.4rem;
+  }
+
+  .content-type:hover:not(.active-content) {
+    background-color: var(--dark-grey);
+    border: 1px solid var(--dark-grey);
+    cursor: pointer;
   }
 
   div:nth-child(1) .content-type::before {

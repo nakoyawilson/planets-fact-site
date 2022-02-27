@@ -12,8 +12,10 @@ const Main = (props) => {
           labelValue="Overview"
           groupName="contentType"
           defaultChecked
-          // labelClasses={`content-type ${checked ? "active-content" : ""}`}
-          labelClasses={`content-type active-content`}
+          labelClasses={`content-type ${
+            props.contentType === "overview" ? "active-content" : ""
+          }`}
+          // labelClasses={`content-type active-content`}
         />
         <RadioButton
           inputValue="Structure"
@@ -21,13 +23,17 @@ const Main = (props) => {
             window.innerWidth >= 710 ? "Internal Structure" : "Structure"
           }
           groupName="contentType"
-          labelClasses="content-type"
+          labelClasses={`content-type ${
+            props.contentType === "structure" ? "active-content" : ""
+          }`}
         />
         <RadioButton
           inputValue="Surface"
           labelValue={window.innerWidth >= 710 ? "Surface Geology" : "Surface"}
           groupName="contentType"
-          labelClasses="content-type"
+          labelClasses={`content-type ${
+            props.contentType === "geology" ? "active-content" : ""
+          }`}
         />
       </form>
       <div className="image-wrapper">
