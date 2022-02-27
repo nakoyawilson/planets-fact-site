@@ -15,7 +15,6 @@ const Main = (props) => {
           labelClasses={`content-type ${
             props.contentType === "overview" ? "active-content" : ""
           }`}
-          // labelClasses={`content-type active-content`}
         />
         <RadioButton
           inputValue="Structure"

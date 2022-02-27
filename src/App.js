@@ -9,11 +9,17 @@ const App = () => {
   const [imageSource, setImageSource] = useState("planet");
   const [contentType, setContentType] = useState("overview");
   const [theme, setTheme] = useState("earth");
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavOpen((prev) => !prev);
+  };
 
   const handlePlanetChange = (e) => {
     const index = data.findIndex((item) => item.name === e.target.id);
     setPlanetIndex(index);
     setTheme(e.target.value);
+    handleToggle();
   };
 
   const handleContentTypeChange = (e) => {
@@ -28,9 +34,15 @@ const App = () => {
       setImageSource("planet");
     }
   };
+
   return (
     <div className={`App ${theme}`}>
-      <Header appData={data} handlePlanetChange={handlePlanetChange} />
+      <Header
+        appData={data}
+        handlePlanetChange={handlePlanetChange}
+        navOpen={navOpen}
+        handleToggle={handleToggle}
+      />
       <Main
         appData={data}
         planetIndex={planetIndex}

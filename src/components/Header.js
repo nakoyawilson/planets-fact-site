@@ -2,12 +2,6 @@ import { useState } from "react";
 import RadioButton from "./RadioButton";
 
 const Header = (props) => {
-  const [navOpen, setNavOpen] = useState(false);
-
-  const handleToggle = () => {
-    setNavOpen((prev) => !prev);
-  };
-
   const displayPlanetNames = (item) => {
     let checked = false;
     if (item.name === "Earth") {
@@ -27,10 +21,10 @@ const Header = (props) => {
   return (
     <header className="header">
       <span className="logo">The Planets</span>
-      <button className="navigation-button" onClick={handleToggle}>
+      <button className="navigation-button" onClick={props.handleToggle}>
         <img src="assets/icon-hamburger.svg" alt="" />
       </button>
-      <nav className={`navigation ${navOpen ? "open" : ""}`}>
+      <nav className={`navigation ${props.navOpen ? "open" : ""}`}>
         <form onChange={props.handlePlanetChange}>
           {props.appData.map(displayPlanetNames)}
         </form>
