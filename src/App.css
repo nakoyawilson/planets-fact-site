@@ -134,14 +134,6 @@ img {
   border-bottom: 1px solid var(--transparent-white2);
 }
 
-.header.open {
-  /* position: fixed;
-  background-color: var(--navy-blue);
-  top: 0;
-  width: 100vw;
-  z-index: 100; */
-}
-
 .logo {
   font-family: var(--font-secondary);
   font-weight: 500;
