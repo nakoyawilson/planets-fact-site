@@ -21,7 +21,7 @@ const Header = (props) => {
     <header className="header">
       <span className="logo">The Planets</span>
       <button className="navigation-button" onClick={props.handleToggle}>
-        <img src="public/assets/icon-hamburger.svg" alt="" />
+        <img src="assets/icon-hamburger.svg" alt="" />
       </button>
       <nav className={`navigation ${props.navOpen ? "open" : ""}`}>
         <form onChange={props.handlePlanetChange}>
