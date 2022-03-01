@@ -135,11 +135,11 @@ img {
 }
 
 .header.open {
-  position: fixed;
+  /* position: fixed;
   background-color: var(--navy-blue);
   top: 0;
   width: 100vw;
-  z-index: 100;
+  z-index: 100; */
 }
 
 .logo {

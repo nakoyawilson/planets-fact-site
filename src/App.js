@@ -13,6 +13,11 @@ const App = () => {
 
   const handleToggle = () => {
     setNavOpen((prev) => !prev);
+    if (navOpen === true) {
+      document.querySelector("body").style.position = "fixed";
+    } else {
+      document.querySelector("body").style.position = "static";
+    }
   };
 
   const handlePlanetChange = (e) => {

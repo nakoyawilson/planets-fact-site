@@ -18,10 +18,10 @@ const Header = (props) => {
     );
   };
   return (
-    <header className={`header ${props.navOpen ? "open" : ""}`}>
+    <header className="header">
       <span className="logo">The Planets</span>
       <button className="navigation-button" onClick={props.handleToggle}>
-        <img src="assets/icon-hamburger.svg" alt="" />
+        <img src="public/assets/icon-hamburger.svg" alt="" />
       </button>
       <nav className={`navigation ${props.navOpen ? "open" : ""}`}>
         <form onChange={props.handlePlanetChange}>
