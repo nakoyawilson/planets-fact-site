@@ -6,6 +6,7 @@
   --white: rgb(255, 255, 255);
   --transparent-white1: rgba(255, 255, 255, 0.1);
   --transparent-white2: rgba(255, 255, 255, 0.2);
+  --transparent-white3: rgba(255, 255, 255, 0.5);
   --navy-blue: rgb(7, 7, 36);
   --dark-grey: rgb(56, 56, 79);
   --light-grey: rgb(131, 131, 145);
@@ -275,14 +276,19 @@ div:nth-child(8) .nav-link::before {
 }
 
 .content-type {
+  color: var(--transparent-white3);
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 1rem;
   text-align: center;
   letter-spacing: 1.92857px;
   text-transform: uppercase;
-  opacity: 0.5;
   position: relative;
+}
+
+.content-type.active-content {
+  font-weight: 700;
+  color: var(--white);
 }
 
 .content-type.active-content::after {
@@ -294,6 +300,7 @@ div:nth-child(8) .nav-link::before {
   bottom: -2.3rem;
   left: 0;
   right: 0;
+  opacity: 1;
 }
 
 .text-content {
@@ -468,11 +475,11 @@ div:nth-child(8) .nav-link::before {
   }
 
   .content-type {
+    color: var(--white);
     display: block;
     font-size: 0.9rem;
     line-height: 2.5rem;
     letter-spacing: 1.92857px;
-    opacity: 1;
     width: 28.1rem;
     text-align: left;
     padding: 0.8rem 0 0.7rem 5rem;
