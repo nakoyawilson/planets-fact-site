@@ -10,6 +10,7 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -41,6 +42,10 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+
+### Useful Resources
+
+- [How to disable scrolling in the background when the mobile menu is open? - Stack Overflow](https://stackoverflow.com/a/27263789)
 
 ## Author
 
