@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data.json";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -13,11 +13,6 @@ const App = () => {
 
   const handleToggle = () => {
     setNavOpen((prev) => !prev);
-    if (navOpen === true) {
-      document.querySelector("body").style.position = "fixed";
-    } else {
-      document.querySelector("body").style.position = "static";
-    }
   };
 
   const handlePlanetChange = (e) => {
@@ -39,6 +34,14 @@ const App = () => {
       setImageSource("planet");
     }
   };
+
+  useEffect(() => {
+    if (navOpen === true) {
+      document.querySelector("body").style.position = "fixed";
+    } else {
+      document.querySelector("body").style.position = "static";
+    }
+  });
 
   return (
     <div className={`App ${theme}`}>
