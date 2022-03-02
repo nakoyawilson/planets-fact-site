@@ -19,7 +19,9 @@ const App = () => {
     const index = data.findIndex((item) => item.name === e.target.id);
     setPlanetIndex(index);
     setTheme(e.target.value);
-    handleToggle();
+    if (navOpen) {
+      handleToggle();
+    }
   };
 
   const handleContentTypeChange = (e) => {
